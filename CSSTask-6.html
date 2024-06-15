@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 400px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .login-box {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .avatar {
+            margin-bottom: 20px;
+        }
+
+        .avatar img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .textbox {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .textbox label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .textbox input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .cancel-btn {
+            width: 20%;
+            background-color: #f44336;
+            color: white;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+        }
+
+        .options input {
+            margin-right: 5px;
+        }
+
+        .options a {
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="avatar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKq9k_FbSROqkCKtfCclO0nzC39QAtRNDbxcH9pVoJ_NCAuNvM" alt="Avatar">
+            </div>
+            <form>
+                <div class="textbox">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username">
+                </div>
+                <div class="textbox">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password">
+                </div>
+                <button type="submit" class="btn login-btn">Login</button>
+                <div class="options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot <span>password?</span></a>
+                </div>
+                <div class="button">
+                    <button type="button" class="btn cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
